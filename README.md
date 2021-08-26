@@ -33,9 +33,19 @@ ER-модель БД представлена ниже.
 
 2. Создать базу данных
 
-3. Применить [скрипт](scid_test.sql)
+3. Применить [скрипт](scid_test.sql) на созданной базе
 
-4. Перезапустить сервер, например
+4. Настроить подключение к базе данных в [конфиге](config.php)
+
+```php
+$db_host = 'HOST';
+$db_name = 'DBNAME';
+$db_conn_string = 'mysql:host='.$db_host.';dbname='.$db_name;
+$db_user = 'USER';
+$db_pass = 'PASSWORD';
+```
+
+5. Перезапустить сервер, например
 
 ```bash
   systemctl restart httpd
