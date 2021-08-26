@@ -11,6 +11,8 @@ PHP 7, MySQL
 
 ## API
 
+Все запросы по http://domain.com/api
+
 ![API](https://user-images.githubusercontent.com/44286080/130979997-7df1254f-22fe-484e-8c97-8a7ab2933f51.png)
 
 ## База данных
@@ -20,6 +22,25 @@ ER-модель БД представлена ниже.
 ![DB](https://user-images.githubusercontent.com/44286080/130980110-d3599cc1-ecb5-438d-9ffe-0d86173e049c.png)
 
 Скрипт бд представлен [тут](scid_test.sql)
+
+## Установка
+
+1. Клонировать репозиторий
+
+```bash
+  git clone git@github.com:Filipponik/scid-test.git
+```
+
+2. Создать базу данных
+
+3. Применить [скрипт](scid_test.sql)
+
+4. Перезапустить сервер, например
+
+```bash
+  systemctl restart httpd
+```
+
 
 ## Задание
 
