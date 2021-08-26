@@ -33,8 +33,7 @@ else {
   foreach ($data['authors'] as $id) {
     $author = R::getRow('SELECT id FROM `author` WHERE id=? LIMIT 1', [$id]);
     if (!$author) {
-      return response(['message' => 'Cannot find all authors'], 400);
-      die();
+      response(['message' => 'Cannot find all authors'], 400);
     }
   }
   try {
@@ -70,8 +69,6 @@ else {
     response(['id' => $id], 200);
 
   } catch (Exception $e) {
-    var_dump($e);
-    die();
     return response(['message' => 'Error while adding magazine to database'], 400);
   }
 }

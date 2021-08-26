@@ -2,6 +2,7 @@
 function response($arr, $code=200) {
   http_response_code($code);
   echo json_encode($arr, JSON_UNESCAPED_SLASHES);
+  die();
 }
 
 require 'rb.php';
