@@ -4,7 +4,6 @@ function response($arr, $code=200) {
   echo json_encode($arr, JSON_UNESCAPED_SLASHES);
 }
 
-// session_start();
 require 'rb.php';
 
 $db_host = 'localhost';
